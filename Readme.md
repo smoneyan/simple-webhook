@@ -1,6 +1,6 @@
 ## Prerequisite
 
-1. ngrok or localtunnel (installed locally) which will proxy connecto
+1. ngrok or localtunnel (installed locally) which will proxy connec to
 
 ## Set up
 
@@ -12,6 +12,14 @@ npm init -y
 
 ```
 node index.js
+```
+
+## To run using the docker
+
+```
+docker build -t simple-webhook:latest .
+docker run -it -p 3000:3000 --name simple-webhook simple-webhook
+
 ```
 
 ## To set up ngrok
